@@ -27,6 +27,8 @@ public class A12_LastIndexOf {
 
         }
 
+        //k harfinin son kullanım indexini yazınız.
+        System.out.println(str.lastIndexOf('k'));
 
     }
 }
