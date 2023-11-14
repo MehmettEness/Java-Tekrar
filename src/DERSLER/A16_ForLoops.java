@@ -1,5 +1,7 @@
 package DERSLER;
 
+import java.util.Scanner;
+
 public class A16_ForLoops {
 
     public static void main(String[] args) {
@@ -46,6 +48,27 @@ public class A16_ForLoops {
                 break;
 
             }
+        }
+
+    //Kullanıcıdan 20 den küçük bir tamsayı alıp bu sayının faktoriyel degerini hesaplayınız.
+        Scanner scan = new Scanner(System.in);
+        System.out.println("20 den küçük bir tamsayı giriniz");
+        int sayi = scan.nextInt();
+
+        int carpim =1;
+
+        if (sayi>20) {
+            System.out.println("20 den küçük bir tamsayı giriniz");
+
+        } else if (sayi<0) {
+            System.out.println("pozitifi bir deger giriniz");
+
+        }else{
+            for (int i = 1; i <=sayi ; i++) {
+                carpim*=i;
+            }
+
+            System.out.println("girilen sayi olan " + sayi + "! = " + carpim);
         }
 
 
