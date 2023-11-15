@@ -1,5 +1,7 @@
 package DERSLER;
 
+import java.sql.SQLOutput;
+
 public class A19_MethodOluşturmaVeKullanma {
     //Soru 1- Kullanicidan input olarak verilen bir String,
     //        baslangic ve bitis indexlerine gore
@@ -12,21 +14,26 @@ public class A19_MethodOluşturmaVeKullanma {
     //          hata mesaji yazdirin.
 
     public static void main(String[] args) {
-        
-        String str = "Java güzeldir";
-        int basIndx = 3;
-        int bitisIndex = 7;
-        
+
+        altString("Java güzel", 3, 7);
+        altString("enesmehmet mahmut", 2, 6);
     }
-    
-    public static void altString ( String metin ,  int basIndx , int bitisIndex){
-        
-        if (basIndx > bitisIndex){
+
+    public static void altString(String metin, int basIndx, int bitisIndex) {
+
+        if (basIndx > bitisIndex) {
             System.out.println("BAşindeksi , bitiş indexten büyük olamaz");
-        } else if (basIndx>= metin.length() || bitisIndex>=metin.length()) {
-            
+        } else if (basIndx >= metin.length() || bitisIndex >= metin.length()) {
+            System.out.println("Geçersiz index");
+        } else {
+            for (int i = basIndx; i < bitisIndex; i++) {
+                System.out.print(metin.charAt(i));
+            }
+            System.out.println("");
         }
+
+
     }
 
+    }
 
-}

@@ -34,10 +34,6 @@ public class A9_Switch_StringManipulation_Equals {
 
         System.out.println(str3.equals(str4.toLowerCase())); //true
 
-
-
-
-
-
     }
+
 }
