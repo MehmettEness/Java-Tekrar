@@ -3,6 +3,14 @@ package DERSLER;
 public class A22_MethodOverloading {
     public static void main(String[] args) {
 
+        /*
+        Method overloadinf = Classta ismi aynı signature farklı
+        method ismi + parametreler = method signature
+        Java üsten aşağıya soldan sağa çalışır.
+        Java parametreye bakar ve değerleri hangisine uygunsa ona göre çalışır. Çalışmasındaki en büyük husus casting dir.
+        Ne kadar az casting yaparsa onu kullanır.
+         */
+
         toplama(4,6); // iki int'in toplami : 10
 
         toplama(5.3 ,6); // double ve int'in toplami : 11.3
