@@ -2,10 +2,11 @@ package DERSLER;
 
 import java.util.Scanner;
 
+import static DERSLER.A21_SORU.*;
+
 public class A20_SORU {
 
     public static void main(String[] args) {
-
 
         //Soru 2- Kullanicidan main method icinde  ayri ayri isim ve soyismini alin
 
@@ -35,6 +36,9 @@ public class A20_SORU {
 
 
         return isimDuzeni;
+
+
     }
+
 
 }
